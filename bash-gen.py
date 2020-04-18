@@ -8,7 +8,7 @@ args.add_argument("--lineCode","-l",type=str,dest="lineCode")
 args.add_argument("--outFile","-o",type=str,dest="outFile")
 args=args.parse_args()
 
-print(args)
+# print(args)
 
 
 f = open(args.outFile, "w+")

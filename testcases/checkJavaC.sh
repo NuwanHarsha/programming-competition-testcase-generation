@@ -1,0 +1,11 @@
+diff outputJava/output00.txt  outputC/output00.txt
+diff outputJava/output01.txt  outputC/output01.txt
+diff outputJava/output02.txt  outputC/output02.txt
+diff outputJava/output03.txt  outputC/output03.txt
+diff outputJava/output04.txt  outputC/output04.txt
+diff outputJava/output05.txt  outputC/output05.txt
+diff outputJava/output06.txt  outputC/output06.txt
+diff outputJava/output07.txt  outputC/output07.txt
+diff outputJava/output08.txt  outputC/output08.txt
+diff outputJava/output09.txt  outputC/output09.txt
+diff outputJava/output10.txt  outputC/output10.txt

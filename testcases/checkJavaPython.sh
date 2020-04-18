@@ -1,0 +1,11 @@
+diff outputJava/output00.txt  outputPython/output00.txt
+diff outputJava/output01.txt  outputPython/output01.txt
+diff outputJava/output02.txt  outputPython/output02.txt
+diff outputJava/output03.txt  outputPython/output03.txt
+diff outputJava/output04.txt  outputPython/output04.txt
+diff outputJava/output05.txt  outputPython/output05.txt
+diff outputJava/output06.txt  outputPython/output06.txt
+diff outputJava/output07.txt  outputPython/output07.txt
+diff outputJava/output08.txt  outputPython/output08.txt
+diff outputJava/output09.txt  outputPython/output09.txt
+diff outputJava/output10.txt  outputPython/output10.txt

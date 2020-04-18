@@ -1,0 +1,11 @@
+python Solution.py < input/input00.txt > outputPython/output00.txt
+python Solution.py < input/input01.txt > outputPython/output01.txt
+python Solution.py < input/input02.txt > outputPython/output02.txt
+python Solution.py < input/input03.txt > outputPython/output03.txt
+python Solution.py < input/input04.txt > outputPython/output04.txt
+python Solution.py < input/input05.txt > outputPython/output05.txt
+python Solution.py < input/input06.txt > outputPython/output06.txt
+python Solution.py < input/input07.txt > outputPython/output07.txt
+python Solution.py < input/input08.txt > outputPython/output08.txt
+python Solution.py < input/input09.txt > outputPython/output09.txt
+python Solution.py < input/input10.txt > outputPython/output10.txt

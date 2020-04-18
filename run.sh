@@ -1,10 +1,37 @@
-mkdir walk
-mkdir walk/input
-mkdir walk/output
-javac WalkSolution.java
-mv WalkSolution.class walk/
-python walk-to-remember-testcase-gen.py -fnp walk/input/input
-python bash-gen.py -s 0 -e 10 -o walk/gen.sh -l 'java WalkSolution < input/input{:02d}.txt > output/output{:02d}.txt'
-cd walk
-chmod 700 gen.sh
-./gen.sh
+rm -r testcases
+mkdir testcases testcases/input testcases/outputJava testcases/outputPython testcases/outputC
+
+javac solutions/Solution.java
+mv solutions/Solution.class testcases/
+
+gcc solutions/Solution.c -o solutions/SolutionC
+mv solutions/SolutionC testcases/
+
+cp solutions/Solution.py testcases/
+
+python testcase-gen.py -fnp testcases/input/input -s 0 -e 10
+
+python bash-gen.py -s 0 -e 10 -o testcases/java.sh -l 'java Solution < input/input{:02d}.txt > outputJava/output{:02d}.txt'
+python bash-gen.py -s 0 -e 10 -o testcases/c.sh -l './SolutionC < input/input{:02d}.txt > outputC/output{:02d}.txt'
+python bash-gen.py -s 0 -e 10 -o testcases/python.sh -l 'python Solution.py < input/input{:02d}.txt > outputPython/output{:02d}.txt'
+
+python bash-gen.py -s 0 -e 10 -o testcases/checkJavaC.sh -l 'diff outputJava/output{:02d}.txt  outputC/output{:02d}.txt'
+python bash-gen.py -s 0 -e 10 -o testcases/checkJavaPython.sh -l 'diff outputJava/output{:02d}.txt  outputPython/output{:02d}.txt'
+
+cd testcases/
+chmod 700 *.sh
+
+./java.sh
+./c.sh
+./python.sh
+
+cp -r outputJava/ output/
+zip -r testcases.zip . -i input/input* output/output* > zipLog.txt
+mv testcases.zip ../testcases-to-upload.zip
+
+echo "Running tests Java - C"
+./checkJavaC.sh
+echo "Running tests Java - Python"
+./checkJavaPython.sh
+echo "If no error, upload testcases-to-upload.zip"
+echo "End of prog"

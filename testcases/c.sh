@@ -1,0 +1,11 @@
+./SolutionC < input/input00.txt > outputC/output00.txt
+./SolutionC < input/input01.txt > outputC/output01.txt
+./SolutionC < input/input02.txt > outputC/output02.txt
+./SolutionC < input/input03.txt > outputC/output03.txt
+./SolutionC < input/input04.txt > outputC/output04.txt
+./SolutionC < input/input05.txt > outputC/output05.txt
+./SolutionC < input/input06.txt > outputC/output06.txt
+./SolutionC < input/input07.txt > outputC/output07.txt
+./SolutionC < input/input08.txt > outputC/output08.txt
+./SolutionC < input/input09.txt > outputC/output09.txt
+./SolutionC < input/input10.txt > outputC/output10.txt

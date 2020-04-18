@@ -1,6 +1,7 @@
 import argparse
 import string
 import random
+import numpy as np
 
 def ranCap():
     upper_alphabet = string.ascii_uppercase
@@ -32,26 +33,24 @@ def ranSign():
 
 args=argparse.ArgumentParser()
 args.add_argument("--fileNamePrefix","-fnp",dest="fileNamePrefix")
+args.add_argument("--start","-s",dest="start",type=int)
+args.add_argument("--end","-e",dest="end",type=int)
 args=args.parse_args()
 
 
-NN=[2,5,10,20,30,50,100,150,200,500]
+NN=[1,2,3,4,5,6,7,8,9,10,12,15]
+
+NN=NN[args.start:args.end+1]
 
 for i in range(len(NN)):
-    fileName = "{}{:02d}.txt".format(args.fileNamePrefix, i + 1)
+    fileName = "{}{:02d}.txt".format(args.fileNamePrefix, args.start+i)
     f = open(fileName, "w+")
 
-
-    E=ranFloat(1000)
-    C=ranFloat(1000)*ranFloat(0.9)
     N=NN[i]
-    S=ranFloat(100)
-
-
-    f.write("{} {} {} {}\n".format(C,E,N,S))
-
+    f.write("{}\n".format(N))
     for n in range(N):
-        f.write("{} {}\n".format(ranFloat(E),ranFloat(100)*ranSign()))
+        R=ranFloat(10)
+        f.write("{:.3f}\n".format(R))
 
     f.close()
 

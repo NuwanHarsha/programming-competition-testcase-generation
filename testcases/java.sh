@@ -1,0 +1,11 @@
+java Solution < input/input00.txt > outputJava/output00.txt
+java Solution < input/input01.txt > outputJava/output01.txt
+java Solution < input/input02.txt > outputJava/output02.txt
+java Solution < input/input03.txt > outputJava/output03.txt
+java Solution < input/input04.txt > outputJava/output04.txt
+java Solution < input/input05.txt > outputJava/output05.txt
+java Solution < input/input06.txt > outputJava/output06.txt
+java Solution < input/input07.txt > outputJava/output07.txt
+java Solution < input/input08.txt > outputJava/output08.txt
+java Solution < input/input09.txt > outputJava/output09.txt
+java Solution < input/input10.txt > outputJava/output10.txt

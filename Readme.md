@@ -1,4 +1,4 @@
-#programming-competition-testcase-generation
+# programming-competition-testcase-generation
 
 This is a tool written to generate testcases for Hackerrank competitions. This tool should run on bash shell (preferably linux).
 
@@ -20,9 +20,9 @@ The example contains code for Java, Python and C. In practice, you can go with o
 
 1. Run the following shell commands
 <code>
-git clone https://github.com/gihanjayatilaka/programming-competition-testcase-generation.git
-cd programming-competition-testcase-generation
-chmod 700 run.sh
+git clone https://github.com/gihanjayatilaka/programming-competition-testcase-generation.git  
+cd programming-competition-testcase-generation  
+chmod 700 run.sh  
 </code>
 
 2. Insert your solutions to **solutions** folder
@@ -36,4 +36,4 @@ chmod 700 run.sh
 
 ## Help
 
-[Contact me](gihan.me/contact/) for any queries.
+[Contact me](https://gihan.me/contact/) for any queries.

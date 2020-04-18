@@ -19,13 +19,11 @@ The example contains code for Java, Python and C. In practice, you can go with o
 # How to use
 
 1. Run the following shell commands
-<code>
+```bash
 git clone https://github.com/gihanjayatilaka/programming-competition-testcase-generation.git
-
 cd programming-competition-testcase-generation  
-
 chmod 700 run.sh  
-</code>
+```
 
 2. Insert your solutions to **solutions** folder
 3. Update **testcase-gen.py**

@@ -1,3 +1,4 @@
+rm testcases-to-upload.zip
 rm -r testcases
 mkdir testcases testcases/input testcases/outputJava testcases/outputPython testcases/outputC
 

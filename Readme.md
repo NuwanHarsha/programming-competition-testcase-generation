@@ -20,8 +20,10 @@ The example contains code for Java, Python and C. In practice, you can go with o
 
 1. Run the following shell commands
 <code>
-git clone https://github.com/gihanjayatilaka/programming-competition-testcase-generation.git  
+git clone https://github.com/gihanjayatilaka/programming-competition-testcase-generation.git
+
 cd programming-competition-testcase-generation  
+
 chmod 700 run.sh  
 </code>
 

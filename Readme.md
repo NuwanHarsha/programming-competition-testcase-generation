@@ -37,3 +37,8 @@ chmod 700 run.sh
 ## Help
 
 [Contact me](https://gihan.me/contact/) for any queries.
+
+## Extra : Plagiarism checking
+
+* Download the submissions using [https://github.com/kasvith/hackerrank-dl](https://github.com/kasvith/hackerrank-dl).
+* Check for plagiarism using any tool.

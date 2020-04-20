@@ -41,4 +41,4 @@ chmod 700 run.sh
 ## Extra : Plagiarism checking
 
 * Download the submissions using [https://github.com/kasvith/hackerrank-dl](https://github.com/kasvith/hackerrank-dl).
-* Check for plagiarism using any tool.
+* Check for plagiarism using a tool eg: [https://theory.stanford.edu/~aiken/moss/](https://theory.stanford.edu/~aiken/moss/).

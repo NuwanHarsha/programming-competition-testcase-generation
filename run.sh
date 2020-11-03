@@ -1,3 +1,8 @@
+#Change these two variables.
+NO_TEST_CASES=10
+MANUAL_TEST_CASES=0
+
+
 rm testcases-to-upload.zip
 rm -r testcases
 mkdir testcases testcases/input testcases/outputJava testcases/outputPython testcases/outputC
@@ -10,14 +15,14 @@ mv solutions/SolutionC testcases/
 
 cp solutions/Solution.py testcases/
 
-python testcase-gen.py -fnp testcases/input/input -s 0 -e 10
+python testcase-gen.py -fnp testcases/input/input -s $MANUAL_TEST_CASES -e $NO_TEST_CASES
 
-python bash-gen.py -s 0 -e 10 -o testcases/java.sh -l 'java Solution < input/input{:02d}.txt > outputJava/output{:02d}.txt'
-python bash-gen.py -s 0 -e 10 -o testcases/c.sh -l './SolutionC < input/input{:02d}.txt > outputC/output{:02d}.txt'
-python bash-gen.py -s 0 -e 10 -o testcases/python.sh -l 'python Solution.py < input/input{:02d}.txt > outputPython/output{:02d}.txt'
+python bash-gen.py -s 0 -e $NO_TEST_CASES -o testcases/java.sh -l 'java Solution < input/input{:02d}.txt > outputJava/output{:02d}.txt'
+python bash-gen.py -s 0 -e $NO_TEST_CASES -o testcases/c.sh -l './SolutionC < input/input{:02d}.txt > outputC/output{:02d}.txt'
+python bash-gen.py -s 0 -e $NO_TEST_CASES -o testcases/python.sh -l 'python Solution.py < input/input{:02d}.txt > outputPython/output{:02d}.txt'
 
-python bash-gen.py -s 0 -e 10 -o testcases/checkJavaC.sh -l 'diff outputJava/output{:02d}.txt  outputC/output{:02d}.txt'
-python bash-gen.py -s 0 -e 10 -o testcases/checkJavaPython.sh -l 'diff outputJava/output{:02d}.txt  outputPython/output{:02d}.txt'
+python bash-gen.py -s 0 -e $NO_TEST_CASES -o testcases/checkJavaC.sh -l 'diff outputJava/output{:02d}.txt  outputC/output{:02d}.txt'
+python bash-gen.py -s 0 -e $NO_TEST_CASES -o testcases/checkJavaPython.sh -l 'diff outputJava/output{:02d}.txt  outputPython/output{:02d}.txt'
 
 cd testcases/
 chmod 700 *.sh
